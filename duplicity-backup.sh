@@ -1101,7 +1101,7 @@ case "${COMMAND}" in
     setup_passphrase
     echo "Restoring now ..." >&3
     #use INCLUDE variable without creating another one
-    INCLUDE="--file-to-restore ${FILE_TO_RESTORE}"
+    INCLUDE="--path-to-restore ${FILE_TO_RESTORE}"
     duplicity_backup
   ;;
 
